@@ -25,12 +25,65 @@
             max-width: 100%;
             border-radius: 50%;
         }
+
+        .cor-primaria {
+            background-color: #134074;
+        }
+
+        .cor-secundaria {
+            background-color: #0b2545;
+        }
+
+        p {
+            font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: black !important;
+        }
+
+        .icones {
+            padding-left: 10px;
+        }
+
+        .titulosBrancos {
+            text-decoration: underline;
+            text-underline-position: under;
+            padding-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: white;
+        }
+
+        .titulosRoxo {
+            text-decoration: underline;
+            text-underline-position: under;
+            padding-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #0b2545;
+        }
+
+        .textoBranco {
+            color: white !important;
+        }
+
+        .jumbotron {
+            margin-bottom: 0%;
+        }
+
+        .textofooter {
+            margin: 0px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Matheus Carneiro</a>
+    <nav class="navbar navbar-expand-lg navbar-light cor-secundaria">
+        <a class="navbar-brand textoBranco" href="#">Matheus Carneiro</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -42,37 +95,37 @@
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Projetos</a>
+                    <a class="nav-link textoBranco" href="#projetos">Projetos</a>
                 </li>
-            </ul>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Sobre mim</a>
-            </li>
-            </ul>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link textoBranco" href="#sobre-mim">Sobre mim</a>
+                </li>
             </ul>
         </div>
     </nav>
-    <section class="jumbotron text-center">
+    <section class="jumbotron text-center cor-primaria">
         <div class="container">
             <img class="foto-perfil" src="imagens/fotonormal.jpg" alt="">
-            <h1 class="jumbotron-heading">Matheus Carneiro</h1>
-            <p class="lead text-muted">Graduando em Engenharia da Computação IFPB - CG.</p>
+            <h1 class="jumbotron-heading textoBranco">Matheus Carneiro</h1>
+            <p class="lead textoBranco">Graduando em Engenharia da Computação IFPB - CG.</p>
             <p>
-                <a href="#" class="btn btn-dark my-2">Contato</a>
+                <a href="#contato" class="btn btn-dark my-2">Contato</a>
             </p>
-            <a href="https://www.linkedin.com/in/matheuscarne/" target="_blank"> <i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/MatheusCarne" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.instagram.com/matheus_ccunha/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/matheus.carne.cunha/" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://twitter.com/twt_matheus" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/matheuscarne/" target="_blank"> <i
+                    class=" textoBranco fab fa-linkedin"></i></a>
+            <a href="https://github.com/MatheusCarne" target="_blank"><i
+                    class="textoBranco icones fab fa-github"></i></a>
+            <a href="https://www.instagram.com/matheus_ccunha/" target="_blank"><i
+                    class="textoBranco icones fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/matheus.carne.cunha/" target="_blank"><i
+                    class="textoBranco icones fab fa-facebook"></i></a>
+            <a href="https://twitter.com/twt_matheus" target="_blank"><i
+                    class="textoBranco icones fab fa-twitter"></i></a>
         </div>
     </section>
-    <div class="album py-5 bg-light">
+    <div class="album py-5 bg-light" id="projetos">
         <div class="container">
-
+            <h2 class="text-center jumbotron-heading titulosRoxo">Projetos</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card mb-4 box-shadow">
@@ -139,28 +192,30 @@
         </div>
     </div>
 
-<!--Sobre mim-->
-<section class="junbotron text-center">
-    <div class="container">
-        <h2 class="junbotron heading">Sobre mim</h2>
-        <p class="lead">Olá meu nome é Matheus Carneiro da Cunha estou atualmente cursando a faculdade de Engenharia da computação, estou sempre em busca de conhecimento e sou apaixonado por tecnologia.</p>
-    </div>
-</section>
-<!--Contato-->
-<section>
-    <div>
-        <div class="container-fluid">
-            <h3 class="text-center">Disponivel para oportunidades</h3>
-            <h4 class="text-center">matheus.cunha@academico.ifpb.edu.br</h4>  
-        </div>    
-    </div>
-</section>
-<!--Rodapé-->
-<footer class="text-center">
-    <p>
-        Copyright 2021 - matheusportflio.me
-    </p>
-</footer>
+    <!--Sobre mim-->
+    <section class="junbotron text-center cor-primaria" id="sobre-mim">
+        <div class="container">
+            <h2 style="padding-top: 60px" class="junbotron-heading titulosBrancos">Sobre mim</h2>
+            <p style="padding-bottom: 60px" class="lead textoBranco">Olá meu nome é Matheus Carneiro da Cunha estou
+                atualmente cursando a faculdade de Engenharia da computação, estou sempre em busca de conhecimento e sou
+                apaixonado por tecnologia.</p>
+        </div>
+    </section>
+    <!--Contato-->
+    <section id="contato">
+        <div>
+            <div class="container-fluid">
+                <h3 style="padding-top: 60px" class="text-center titulosRoxo">Disponivel para oportunidades</h3>
+                <a href="mailto:matheus.cunha@academico.ifpb.edu.br">
+                    <h4 style="padding-bottom: 60px" class="text-center">matheus.cunha@academico.ifpb.edu.br</h4>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--Rodapé-->
+    <footer class="text-center cor-secundaria textofooter">
+        <p class="textoBranco">Copyright 2021 - matheusportflio.me</p>
+    </footer>
 </body>
 
 </html>
