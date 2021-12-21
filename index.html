@@ -19,72 +19,7 @@
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/c09c7e79b7.js" crossorigin="anonymous"></script>
-    <style>
-        .foto-perfil {
-            weight: 100%;
-            width: auto;
-            max-width: 100%;
-            border-radius: 50%;
-        }
-
-        .cor-primaria {
-            background-color: #134074;
-        }
-
-        .cor-secundaria {
-            background-color: #0b2545;
-        }
-
-        p {
-            font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            color: black !important;
-        }
-
-        .icones {
-            padding-left: 10px;
-        }
-
-        .titulosBrancos {
-            text-decoration: underline;
-            text-underline-position: under;
-            padding-bottom: 20px;
-            text-transform: uppercase;
-            font-weight: 700;
-            color: white;
-        }
-
-        .titulosRoxo {
-            text-decoration: underline;
-            text-underline-position: under;
-            padding-bottom: 20px;
-            text-transform: uppercase;
-            font-weight: 700;
-            color: #0b2545;
-        }
-
-        .textoBranco {
-            color: white !important;
-        }
-
-        .jumbotron {
-            margin-bottom: 0%;
-        }
-
-        .textofooter {
-            margin: 0px;
-            padding-top: 15px;
-            padding-bottom: 15px;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        .alinhado {
-            display: block;
-            margin: 0 auto;
-        }
-    </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -217,18 +152,20 @@
     <!--Contato-->
     <section id="contato">
         <div>
-            <div class="container-fluid">
-                <h3 style="padding-top: 60px" class="text-center titulosRoxo">Disponivel para oportunidades</h3>
-                <a href="mailto:matheus.cunha@academico.ifpb.edu.br">
-                    <h4 style="padding-bottom: 20px;" class="text-center">matheus.cunha@academico.ifpb.edu.br</h4>
+            <div class="container-fluid" style="padding-bottom: 60px;">
+                <h3 style="padding-top: 50px" class="text-center titulosRoxo">Disponivel para oportunidades</h3>
+               <main class="cor-primaria">
+                 <a class="textoBranco" href="mailto:matheus.cunha@academico.ifpb.edu.br">
+                    <h4 style="padding-bottom: 20px; padding-top: 15px;" class="text-center textoBranco">matheus.cunha@academico.ifpb.edu.br</h4>
                 </a>
-                <h4 class="text-center" style="padding-bottom: 60px;"><a href="imagens/Curriculo.pdf"
-                        download="Curriculo.pdf" type="application/pdf">Baixe meu curriculo.</a></h4>
+                <h4 class="text-center"   style="padding-bottom: 10px;"><a class="textoBranco" href="imagens/Curriculo.pdf"
+                        download="Curriculo.pdf" type="application/pdf">Baixe meu curriculo!</a></h4>
+               </main>
             </div>
         </div>
     </section>
     <!--Rodapé-->
-    <footer class="text-center cor-secundaria textofooter">
+    <footer class="text-center cor-secundaria textofooter" style="padding-top: 20px;">
         <p class="textoBranco"> &copy Copyright 2021 - Matheus Carneiro</p>
     </footer>
 </body>
